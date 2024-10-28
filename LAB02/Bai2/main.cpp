@@ -6,18 +6,18 @@
 using namespace std;
 
 int main() {
-    cout << "*************************************************\n";
-    
+	cout << "*************************************************\n";
+
 	// Khoi tạo một đối tượng tam giác và nhập toạ độ 3 điểm
-    TamGiac a;
+	TamGiac a;
 	cout << "Nhap toa do 3 diem trong tam giac: \n";
-    a.Nhap();
+	a.Nhap();
 
 	cout << "*************************************************\n";
-    
+
 	// Sao chép đối tượng tam giác a vào b và thực hiện tịnh tiến
 	TamGiac b(a);
-    double x, y;
+	double x, y;
 	cout << "Nhap vector tinh tien (x, y) de tinh tien tam giac (x y): ";
 	cin >> x >> y;
 	b.TinhTien(x, y);
@@ -25,27 +25,26 @@ int main() {
 	cout << "*************************************************\n";
 	// Sao chép đối tượng tam giác a vào c và thực hiện phóng to
 	TamGiac c(a);
-	double k;
+	double k=0;
 	do {
 		cout << "Nhap he so phong to (>0) de phong to tam giac: ";
 		cin >> k;
-	}
-	while (k > 1);
+	} while (k < 1);
 	c.PhongTo(k);
 
 	cout << "*************************************************\n";
 	// Sao chép đối tượng tam giác a vào d và thực hiện thu nhỏ
-	TamGiac d(a);	
+	TamGiac d(a);
+	k = 0;
 	do {
 		cout << "Nhap he so thu nho (>0) de thu nho tam giac: ";
 		cin >> k;
-	}
-	while (k > 1);
+	} while (k < 1);
 	d.ThuNho(k);
 
 	cout << "*************************************************\n";
 	// Sao chép đối tượng tam giác a vào e và thực hiện quay
-	TamGiac e(a);	
+	TamGiac e(a);
 	double theta;
 	cout << "Nhap goc quay de quay tam giac (don vi radian): ";
 	cin >> theta;
@@ -65,5 +64,5 @@ int main() {
 	cout << "[+] Tam giac sau quay: ";
 	e.Xuat();
 
-    return 0;
+	return 0;
 }

@@ -15,22 +15,22 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="Diem.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="TamGiac.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-  </ItemGroup>
-  <ItemGroup>
+    <ClCompile Include="main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
     <ClCompile Include="Diem.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="TamGiac.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="main.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Diem.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="TamGiac.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>
