@@ -27,7 +27,7 @@ int main() {
 	TamGiac c(a);
 	double k=0;
 	do {
-		cout << "Nhap he so phong to (>0) de phong to tam giac: ";
+		cout << "Nhap he so phong to (>=1) de phong to tam giac: ";
 		cin >> k;
 	} while (k < 1);
 	c.PhongTo(k);
@@ -37,7 +37,7 @@ int main() {
 	TamGiac d(a);
 	k = 0;
 	do {
-		cout << "Nhap he so thu nho (>0) de thu nho tam giac: ";
+		cout << "Nhap he so thu nho (>=1) de thu nho tam giac: ";
 		cin >> k;
 	} while (k < 1);
 	d.ThuNho(k);
