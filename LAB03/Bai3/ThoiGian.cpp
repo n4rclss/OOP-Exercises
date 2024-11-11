@@ -37,16 +37,6 @@ void ThoiGian::ChuanHoa()
 		iGio %= 24;
 }
 
-bool ThoiGian::CheckInput()
-{
-	if (iGio < 0 || iGio >= 24 || iPhut < 0 || iPhut >= 60 || iGiay < 0 || iGiay >= 60)
-	{
-		cout << "Thoi gian khong hop le. Nhap lai: ";
-		return false;
-	}
-	return true;
-}
-
 //Toán tử cộng 2 thời gian
 ThoiGian ThoiGian::operator+(ThoiGian t) const
 {
@@ -148,9 +138,7 @@ bool ThoiGian::operator<=(ThoiGian t) const
 //Toán tử nhập
 istream& operator>>(istream& is, ThoiGian& t)
 {	
-	do {
-		is >> t.iGio >> t.iPhut >> t.iGiay;
-	} while (!t.CheckInput());
+	is >> t.iGio >> t.iPhut >> t.iGiay;
 	return is;
 }
 
