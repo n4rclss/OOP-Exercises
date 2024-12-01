@@ -51,3 +51,9 @@ string SIM::getMaNhaMang()
 {
 	return m_MaNhaMang;
 }
+
+// Phương thức trả về số ghi nợ ở SIM trả sau (hàm ảo)
+double SIM::getSoGhiNo()
+{
+	return 0;
+}

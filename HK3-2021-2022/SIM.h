@@ -33,5 +33,8 @@ public:
 
 	// Phương thức trả về mã nhà mạng
 	string getMaNhaMang();
+
+	// Phương thức trả về số ghi nợ ở SIM trả sau (hàm thuần ảo)
+	virtual double getSoGhiNo();
 };
 

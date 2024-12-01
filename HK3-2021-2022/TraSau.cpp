@@ -51,3 +51,9 @@ bool TraSau::isTraSau()
 {
 	return true;
 }
+
+// Phương thức trả về số ghi nợ
+double TraSau::getSoGhiNo()
+{
+	return m_SoGhiNo;
+}

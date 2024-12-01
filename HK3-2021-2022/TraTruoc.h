@@ -23,5 +23,6 @@ public:
 
 	// Phương thức trả về true nếu là SIM trả trước
 	bool isTraTruoc();
+
 };
 

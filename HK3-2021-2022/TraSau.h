@@ -23,5 +23,8 @@ public:
 
 	// Phương thức trả về true nếu là SIM trả sau
 	bool isTraSau();
+
+	// Phương thức trả về số ghi nợ
+	double getSoGhiNo();
 };
 

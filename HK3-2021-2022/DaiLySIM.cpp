@@ -88,7 +88,7 @@ void DaiLySIM::MaxSoGhiNo_SIMTraSau()
 	for (; i < m_SoLuong; i++)
 		if (m_pDsSIM[i]->isTraSau())
 		{
-			max = m_pDsSIM[i]->TinhKhuyenMai();
+			max = m_pDsSIM[i]->getSoGhiNo();
 			break;
 		}
 	if (i == m_SoLuong) {
@@ -97,13 +97,13 @@ void DaiLySIM::MaxSoGhiNo_SIMTraSau()
 	}
 	for (; i < m_SoLuong; i++)
 	{
-		if (m_pDsSIM[i]->isTraSau() && m_pDsSIM[i]->TinhKhuyenMai() > max)
+		if (m_pDsSIM[i]->isTraSau() && m_pDsSIM[i]->getSoGhiNo() > max)
 		{
-			max = m_pDsSIM[i]->TinhKhuyenMai();
+			max = m_pDsSIM[i]->getSoGhiNo();
 			DsLonNhat.clear();
 			DsLonNhat.push_back(i);
 		}
-		else if (m_pDsSIM[i]->isTraSau() && m_pDsSIM[i]->TinhKhuyenMai() == max)
+		else if (m_pDsSIM[i]->isTraSau() && m_pDsSIM[i]->getSoGhiNo() == max)
 			DsLonNhat.push_back(i);
 		else
 			continue;

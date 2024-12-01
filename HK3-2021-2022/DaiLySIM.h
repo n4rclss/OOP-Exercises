@@ -6,8 +6,9 @@
 class DaiLySIM
 {
 private:
-	SIM** m_pDsSIM;			// Mảng chứa danh sách các SIM
 	int m_SoLuong;			// Số lượng SIM
+	SIM** m_pDsSIM;			// Mảng chứa danh sách các SIM
+
 public:
 	// Phương thức khởi tạo
 	DaiLySIM();
