@@ -8,7 +8,7 @@ SIM::SIM() : m_SoSerial(""), m_MaNhaMang(""), m_SoDienThoai(""), m_TrangThai(fal
 // Khởi tạo một SIM với các thông số truyền vào
 SIM::SIM(string t_SoSerial, string t_MaNhaMang, string t_SoDienThoai, bool t_TrangThai) : m_SoSerial(t_SoSerial), m_MaNhaMang(t_MaNhaMang), m_SoDienThoai(t_SoDienThoai), m_TrangThai(t_TrangThai) {}
 
-// Phương thức hủy (hàm ảo)
+// Phương thức hủy
 SIM::~SIM() {}
 
 // Phương thức nhập thông tin SIM

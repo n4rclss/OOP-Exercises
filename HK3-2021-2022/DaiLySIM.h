@@ -28,3 +28,14 @@ public:
 	void MaxSoGhiNo_SIMTraSau();
 };
 
+
+
+
+
+
+
+
+
+
+
+

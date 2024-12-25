@@ -17,8 +17,8 @@ public:
 	SIM();
 	SIM(string t_SoSerial, string t_MaNhaMang, string t_SoDienThoai, bool t_TrangThai);
 
-	// Phương thức hủy (hàm ảo)
-	virtual ~SIM();
+	// Phương thức hủy
+	~SIM();
 
 	// Phương thức nhập/xuất thông tin SIM
 	virtual void Nhap();
@@ -34,7 +34,7 @@ public:
 	// Phương thức trả về mã nhà mạng
 	string getMaNhaMang();
 
-	// Phương thức trả về số ghi nợ ở SIM trả sau (hàm thuần ảo)
+	// Phương thức trả về số ghi nợ ở SIM trả sau
 	virtual double getSoGhiNo();
 };
 

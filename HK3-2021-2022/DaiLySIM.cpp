@@ -85,16 +85,22 @@ void DaiLySIM::MaxSoGhiNo_SIMTraSau()
 	double max = 0;
 	int i = 0;
 	vector<int> DsLonNhat;
+
+	// Tìm SIM trả sau đầu tiên và để là max
 	for (; i < m_SoLuong; i++)
 		if (m_pDsSIM[i]->isTraSau())
 		{
 			max = m_pDsSIM[i]->getSoGhiNo();
 			break;
 		}
+
+	// Nếu không có SIM trả sau nào
 	if (i == m_SoLuong) {
 		cout << "Khong co SIM tra sau nao\n";
 		return;
 	}
+
+	// Duyệt danh sách SIM và tìm ra danh sách gồm một hay nhiều SIM trả sau có số ghi nợ lớn nhất
 	for (; i < m_SoLuong; i++)
 	{
 		if (m_pDsSIM[i]->isTraSau() && m_pDsSIM[i]->getSoGhiNo() > max)
@@ -109,6 +115,7 @@ void DaiLySIM::MaxSoGhiNo_SIMTraSau()
 			continue;
 	}
 
+	// In kết quả
 	cout << "SIM tra sau co so ghi no lon nhat: \n";
 	for (int i = 0; i < DsLonNhat.size(); i++)
 	{

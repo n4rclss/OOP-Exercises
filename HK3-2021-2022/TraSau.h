@@ -9,7 +9,7 @@ private:
 public:
 	// Phương thức khởi tạo
 	TraSau();
-	TraSau(string t_SoSerial, string t_MaNhaMang, string t_SoDienThoai, bool t_TrangThai, string t_GoiCuoc, double t_SoGhiNo);
+	TraSau(string t_SoSerial, string t_MaNhaMang, string t_SoDienThoai, bool t_TrangThai, string t_GoiCuoc, double t_SoGhSNo);
 
 	// Phương thức hủy
 	~TraSau();
